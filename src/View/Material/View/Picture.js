@@ -16,6 +16,7 @@ import {
 
 import PopoverModel from '../../../Component/Popover';
 import Media from '../../../Component/Media';
+import {uploadMediaUrl} from '../../../frontend';
 
 import _ from 'lodash';
 
@@ -110,7 +111,7 @@ class Picture extends Component {
               </div>
               }
               <div style={{display: 'inline-block', float: 'right', marginRight: '1rem'}}>
-                <Upload name="media" action="/serve/api/media/upload" data={{type: 'picture', groupId: selectedGroup}} onChange={this.uploadMedia} showUploadList={false}>
+                <Upload name="media" action={uploadMediaUrl} data={{type: 'picture', groupId: selectedGroup}} onChange={this.uploadMedia} showUploadList={false}>
                   <Button type="primary" icon="upload">上传图片</Button>
                 </Upload>
               </div>

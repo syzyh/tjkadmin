@@ -16,6 +16,7 @@ import {
 
 import PopoverModel from '../../../Component/Popover';
 import Media from '../../../Component/Media';
+import {uploadMediaUrl} from '../../../frontend';
 
 import _ from 'lodash';
 
@@ -112,7 +113,7 @@ class Audio extends Component {
               </span>
               }
               <div style={{display: 'inline-block', float: 'right', marginRight: '1rem'}}>
-                <Upload name="media" action="/serve/api/media/upload" data={{type: 'audio', groupId: selectedGroup}} onChange={this.uploadMedia} showUploadList={false}>
+                <Upload name="media" action={uploadMediaUrl} data={{type: 'audio', groupId: selectedGroup}} onChange={this.uploadMedia} showUploadList={false}>
                   <Button type="primary" icon="upload">上传音频</Button>
                 </Upload>
               </div>
