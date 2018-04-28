@@ -1,0 +1,11 @@
+.editable-row-text {
+  padding: 5px;
+}
+
+.editable-row-operations {
+  text-align: center
+}
+
+.editable-row-operations a {
+  margin-right: 8px;
+}
