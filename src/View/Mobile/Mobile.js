@@ -5,7 +5,6 @@ import { Menu, Icon, Spin } from 'antd';
 
 import Swim from './Swim';
 import Audio from './Audio';
-import Video from './Video';
 
 import {
   fetchingData,

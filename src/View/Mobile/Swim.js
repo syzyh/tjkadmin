@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Menu, Layout, Spin, message, Input, Button } from 'antd';
+import { Menu, Layout, message, Input, Button } from 'antd';
 
 import PopoverModel from '../../Component/Popover';
-import DepartmentTable from './DepartmentTable';
 import DepartTable from './DepartTable';
 
 import {
-  fetchingData,
   createCategory,
   deleteCategory,
   updateCategory,
@@ -42,10 +40,6 @@ class Mobile extends Component {
       creatingDepartment: false,
     };
   }
-
-  // componentDidMount() {
-  //   this.props.fetchingData();
-  // }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.categorys !== this.props.categorys) {

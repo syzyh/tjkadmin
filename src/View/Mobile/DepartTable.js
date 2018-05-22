@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table, Icon, Divider, Input, Popconfirm, Button } from 'antd';
+import { Table, Icon, Input, Popconfirm } from 'antd';
 
 import MediaSelector from '../../Component/MediaSelector';
 
@@ -60,7 +60,6 @@ class DepartTable extends Component {
       title: '操作',
       dataIndex: 'operation',
       render: (text, record, index) => {
-        const { editable } = record;
         return (
           <div className="editable-row-operations">
             {

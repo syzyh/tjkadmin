@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Menu, Layout, Spin, message, Input, Button } from 'antd';
+import { Menu, Layout, Button } from 'antd';
 
 import _ from 'lodash';
 
@@ -12,7 +11,6 @@ import {
   topAudio,
 } from './action.js';
 
-import PopoverModel from '../../Component/Popover';
 import MediaTable from './MediaTable';
 
 const { Sider, Content } = Layout;
@@ -59,7 +57,7 @@ class Audio extends Component {
                     if (d.category_id === c._id) {
                       return (<Menu.Item key={d._id}>{d.department_name}</Menu.Item>)
                     } else {
-                      return ;
+                      return null;
                     }
                   })
                   }

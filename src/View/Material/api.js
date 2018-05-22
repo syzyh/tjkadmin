@@ -1,8 +1,8 @@
 import axios from 'axios';
 import {apiConfig} from '../../frontend';
 
-const groupUrl = apiConfig('/serve/api/group');
-const mediaUrl = apiConfig('/serve/api/media');
+const groupUrl = apiConfig('/api/group');
+const mediaUrl = apiConfig('/api/media');
 
 export const fetchAllGroupsAPI = () => {
   console.log("group url:", groupUrl);

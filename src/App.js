@@ -5,7 +5,8 @@ import { Layout, Menu, Icon } from 'antd';
 
 import Material from './View/Material/Material';
 import Mobile from './View/Mobile/Mobile';
-import Forum from './View/Forum/Forum';
+// import Forum from './View/Forum/Forum';
+import User from './View/User/users';
 
 import './App.css';
 
@@ -64,7 +65,7 @@ class App extends Component {
         <Content style={{ padding: '0 24px', minHeight: 280 }}>
           <Route path="/material" component={Material}/>
           <Route path="/mobile" component={Mobile}/>
-          <Route path="/forum" component={Forum}/>
+          <Route path="/user" component={User}/>
         </Content>
       </Layout>
     </Content>

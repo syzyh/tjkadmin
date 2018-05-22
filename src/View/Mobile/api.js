@@ -1,9 +1,9 @@
 import axios from 'axios';
 import {apiConfig} from '../../frontend';
 
-const categoryUrl = apiConfig('/serve/api/category');
-const departmentUrl = apiConfig('/serve/api/department');
-const audioUrl = apiConfig('/serve/api/audio');
+const categoryUrl = apiConfig('/api/category');
+const departmentUrl = apiConfig('/api/department');
+const audioUrl = apiConfig('/api/audio');
 
 export const fetchAllCategorysAPI = () => {
   return axios.get(categoryUrl);
